@@ -45,4 +45,86 @@ table {
 /*----------------------------------------------------------------------------------------*/
 
 
+body {
+    background-color: #111;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0; 
+    overflow-x: hidden;
+}
 
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#reloj {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+#fecha {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#frase {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px 10px 0 0;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+    backdrop-filter: blur(6px);
+    
+    max-width: 450px;
+    width: 100%;
+}
+
+footer a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}

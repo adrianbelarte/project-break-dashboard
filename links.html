@@ -8,29 +8,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header><h1>Links interesantes</h1></header>
     <nav></nav>
     <div class="container">
-        <main>
-            <div class="titulo">
+        <main class="main-flex">
+            <div class="formulario">
+              <div class="titulo">
                 <label for="titulo">Titulo:</label>
                 <input type="text" id="tituloInput">
-            </div>
-            <div class="link">
-                <label for="link">Link: </label>
+              </div>
+              <div class="link">
+                <label for="link">Link:</label>
                 <input type="text" id="linkInput">
+              </div>
+              <button class="btn-confirmar">Confirmar</button>
             </div>
-            <button class="btn-confirmar">Confirmar</button>
-        </main>
-        <aside>
-            <div class="linkList">
-            </div>
-        </aside>
+          
+            <aside class="resultados">
+              <div class="linkList"></div>
+            </aside>
+          </main>
     </div>
     <footer>
-        <a href="/reloj.html">Reloj</a>
-        <a href="/tiempo.html">Tiempo</a>
-        <a href="/password.htm">Password</a>
+        <a id="home" href="/index.html">
+            <img src="img/home-logo.png" alt="Home Logo">
+        </a>
+        <a href="/tiempo.html">
+            <img src="img/tiempo-logo.png" alt="Tiempo Logo">
+        </a>
+        <a href="/password.htm">
+            <img src="img/password-logo.png" alt="Password Logo">
+        </a>
+        <a href="/reloj.html">
+            <img src="img/time-logo.png" alt="time Logo">
+        </a>
     </footer>
 </body>
 <script src="js\links.js"></script>
