@@ -6,6 +6,7 @@ const numeros = "0123456789";
 const simbolos = "!@#$%^&*()-_=+";
 const longitudPassword = document.getElementById("nCaracteres")
 const confirmar = document.querySelector(`.confirmar`)
+
 const imagenes = [
     "img/1.jpg",
     "img/2.jpg",

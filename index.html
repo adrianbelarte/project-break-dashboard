@@ -5,16 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav></nav>
     <div class="container">
-        <aside></aside>
-        <main>
-            <article></article>
-            <section></section>
-        </main>
+        <!-- Sección de enlaces -->
+        <div class="links">
+            <main class="main-flex">
+                <div class="formulario">
+                    <div class="titulo">
+                        <label for="titulo">Titulo:</label>
+                        <input type="text" id="tituloInput">
+                    </div>
+                    <div class="link">
+                        <label for="link">Link:</label>
+                        <input type="text" id="linkInput">
+                    </div>
+                    <button class="confirmarLink">Confirmar</button>
+                </div>
+              
+                <aside class="resultados">
+                    <div class="linkList"></div>
+                </aside>
+            </main>
+        </div>
+
+        <!-- Sección de reloj y clima -->
+        <div class="reloj-clima">
+            <main class="reloj">
+                <article>
+                    <div id="fecha"></div>
+                    <div id="reloj"></div>
+                </article>
+                <section>
+                    <div id="frase"></div>
+                </section>
+            </main>
+
+            <div class="weather-box">
+                <main class="weather-main">
+                    <article class="current"></article>
+                    <section class="info"></section>
+                </main>
+                <aside class="horas-Tiempo">
+                    <h3>Previsión por horas</h3>
+                    <div class="horas-contenedor"></div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- Sección de contraseña -->
+        <div class="password">
+            <main>
+                <article>
+                    <label for="Longitud">Elige entre 12 y 50 caracteres:</label>
+                    <select name="selector" id="nCaracteres"></select>
+                </article>
+                <aside>
+                    <div id="password"></div>
+                </aside>
+                <section>
+                    <button class="confirmarPassword">Confirmar</button>
+                </section>
+            </main>
+        </div>
     </div>
+
+    <!-- Footer con links -->
     <footer>
         <a href="/reloj.html">
             <img src="img/time-logo.png" alt="reloj-logo">
@@ -29,6 +87,7 @@
             <img src="img/links-logo.png" alt="Links Logo">
         </a>
     </footer>
+
+    <script src="/js/index.js"></script>
 </body>
-<script src="/js/index.js"></script>
 </html>
