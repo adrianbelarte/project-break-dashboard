@@ -256,16 +256,7 @@ function templateFecha(fecha){
 const apiKey = `b246e05020ed4fc3bb8214449251504`;
 const baseUrl = `https://api.weatherapi.com/v1`;
 let ciudad = `Madrid`;
-function cambiarFondo() {
-    const r = Math.floor(Math.random() * imagenes.length);
-    document.body.style.backgroundImage = `url('${imagenes[r]}')`;
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.transition = "background-image 1s ease-in-out";
-    document.body.style.backgroundAttachment = "fixed"; 
-    document.body.style.overflowX = "hidden"; 
-}
+
 
 const getWeather = async (api) => {
     try{
